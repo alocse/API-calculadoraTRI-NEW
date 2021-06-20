@@ -1,4 +1,5 @@
 import math
+import sys
 import string
 import json
 habilidade=[]
