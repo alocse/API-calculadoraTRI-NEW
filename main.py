@@ -1,7 +1,6 @@
 import sys
 import math
 import random
-import keyboard
 import string
 import subprocess
 import os
