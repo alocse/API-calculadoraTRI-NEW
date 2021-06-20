@@ -1,9 +1,6 @@
-import sys
 import math
-import random
 import string
 import json
-import io
 habilidade=[]
 nota_bin=[]
 pnome_aluno=[]
