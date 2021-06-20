@@ -74,8 +74,7 @@ def execute(nota_json):
     quant_itens=len(pnota_aluno[0])-1
 
     
-    return json_nota
-    """
+    
     for j in range(len(turm)):
         pnota_bin.append("")
         for i in range(len(pnota_aluno)):
@@ -84,7 +83,8 @@ def execute(nota_json):
             else:
                 pnota_bin[j]=pnota_bin[j]+'0'
 
-    
+    return json_nota
+    """
     nota_bin=pnota_bin[1:]
     nome=pnome_aluno[1:]
 
