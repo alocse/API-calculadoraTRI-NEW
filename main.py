@@ -32,6 +32,8 @@ bi=[]
 nome=[]
 dic={}
 
+from readchar import readchar
+from random import uniform
 
 #definicoes
 
