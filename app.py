@@ -19,7 +19,7 @@ def calculate():
     try:  
         tri = execute(body) 
     except Exception as e: 
-        return {"ok": "error"}
+        return {"error": e}
     
     return tri
     
