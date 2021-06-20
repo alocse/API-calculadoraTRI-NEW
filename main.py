@@ -1,8 +1,9 @@
 import sys
 import math
 import random
-import string
 import keyboard
+import string
+import subprocess
 import os
 import time
 import json
@@ -50,21 +51,18 @@ def cci(a,b,k,c):
 
 #leitura de dados a partir arquivo .json
 def execute(nota_json):
-    
+
     json_nota = json.dumps(nota_json)
-    #return json_nota
     entrada = json.loads(json_nota)
-    #return json_nota
-    
+
     anc1=entrada[0]['ANCORA_1']
     anc2=entrada[0]['ANCORA_2']
     disc=entrada[0]['DISCIPLINA']
     seri=entrada[0]['SERIE']
     turm=entrada[0]['TURMA']
-    
+
     alternativas=5
-    
-    
+
     for i in range(len(turm)):
         pnome_aluno.append(turm[i]['ALUNO'])
         pnota_aluno.append(turm[i]['RESPOSTA'])
@@ -73,7 +71,6 @@ def execute(nota_json):
     quant_dados=len(turm)-1
     quant_itens=len(pnota_aluno[0])-1
 
-    
     for j in range(len(turm)):
         pnota_bin.append("")
         for i in range(len(pnota_aluno)):
@@ -82,8 +79,6 @@ def execute(nota_json):
             else:
                 pnota_bin[j]=pnota_bin[j]+'0'
 
-    #return json_nota
-    #aqui quebrou
     nota_bin=pnota_bin[1:]
     nome=pnome_aluno[1:]
 
@@ -92,7 +87,7 @@ def execute(nota_json):
     dic['TURMA']={}
     for i in range(1,quant_dados):dic['TURMA'][nome[i]]=0
 
-    
+
     # inicializacao de variaveis
     for i in range(quant_dados):
         nota.append(0)
@@ -111,8 +106,7 @@ def execute(nota_json):
         amin.append(0)
         bmin.append(0)
 
-    
-    
+
     if quant_itens>0:
         #primeira estimativa de nota
         for i in range(quant_itens):
@@ -311,4 +305,3 @@ def execute(nota_json):
     return_json1 = dic
     
     return return_json1
-   
