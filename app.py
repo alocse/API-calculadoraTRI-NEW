@@ -1,11 +1,13 @@
-import flask
-app = flask.Flask(__name__)
 
-@app.route("/home")
-def home():
-    return "teste api alocse"
+from flask import Flask, request
 
-if __name__ == "__main__":
-    app.run()
+from main import execute
 
-    
+
+app = Flask("alocse")
+
+@app.route("/teste", methods=["GET"])
+def get():
+    return {"ok": "mundo1"}
+
+app.run()
