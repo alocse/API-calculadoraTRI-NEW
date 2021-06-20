@@ -1,5 +1,5 @@
-import flask,request
-app = flask.Flask(__name__)
+from flask import Flask, request
+app = Flask(__name__)
 
 @app.route("/home")
 def home():
