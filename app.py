@@ -1,4 +1,4 @@
-import flask
+import flask,request
 app = flask.Flask(__name__)
 
 @app.route("/home")
@@ -13,6 +13,7 @@ def get():
 
 @app.route("/calculateTRI", methods=["POST"])
 def calculate():
+    body = request.get_json()
     return "ola"
 
 if __name__ == "__main__":
