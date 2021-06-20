@@ -12,5 +12,13 @@ def get():
     return {"ok": "mundo1"}
 
 
+@app.route("/calculateTRI", methods=["POST"])
+def calculate():
+    
+    body = request.get_json()
+    #print(body)
+    
+    return body
+
 if __name__ == "__main__":
     app.run()
