@@ -6,7 +6,6 @@ import os
 import time
 import json
 import io
-import logging
 habilidade=[]
 nota_bin=[]
 pnome_aluno=[]
@@ -48,10 +47,6 @@ def cci(a,b,k,c):
 
 #leitura de dados a partir arquivo .json
 def execute(nota_json):
-    
-    logger = logging.getLogger(__name__)
-    logger.warning("e agora")
-    
     json_nota = json.dumps(nota_json)
     entrada = json.loads(json_nota)
     
