@@ -83,6 +83,8 @@ def execute(nota_json):
             else:
                 pnota_bin[j]=pnota_bin[j]+'0'
 
+    return json_nota
+    """
     nota_bin=pnota_bin[1:]
     nome=pnome_aluno[1:]
 
@@ -91,8 +93,7 @@ def execute(nota_json):
     dic['TURMA']={}
     for i in range(1,quant_dados):dic['TURMA'][nome[i]]=0
 
-    return json_nota
-    """
+    
     # inicializacao de variaveis
     for i in range(quant_dados):
         nota.append(0)
