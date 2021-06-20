@@ -11,9 +11,5 @@ def get():
     return {"ok": "mundo1"}
 
 
-@app.route("/calculateTRI", methods=["POST"])
-def calculate():
-    return "ola"
-
 if __name__ == "__main__":
     app.run()
