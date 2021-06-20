@@ -14,9 +14,9 @@ def get():
 
 @app.route("/calculateTRI", methods=["POST"])
 def calculate():
-    body = request.get_json()
-    tri = execute(body)
-    return tri
+    #body = request.get_json()
+    #tri = execute(body)
+    return "ola"
 
 if __name__ == "__main__":
     app.run()
