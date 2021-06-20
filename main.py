@@ -54,8 +54,8 @@ def execute(nota_json):
     json_nota = json.dumps(nota_json)
     #return json_nota
     entrada = json.loads(json_nota)
-    return json_nota
-    """
+    #return json_nota
+    
     anc1=entrada[0]['ANCORA_1']
     anc2=entrada[0]['ANCORA_2']
     disc=entrada[0]['DISCIPLINA']
@@ -63,7 +63,8 @@ def execute(nota_json):
     turm=entrada[0]['TURMA']
     
     alternativas=5
-
+    return json_nota
+    """
     for i in range(len(turm)):
         pnome_aluno.append(turm[i]['ALUNO'])
         pnota_aluno.append(turm[i]['RESPOSTA'])
