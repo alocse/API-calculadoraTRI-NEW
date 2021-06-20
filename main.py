@@ -42,7 +42,7 @@ def cci(a,b,k,c):
 
 #leitura de dados a partir arquivo .json
 def execute(nota_json):
-
+     print('01')
     json_nota = json.dumps(nota_json)
     entrada = json.loads(json_nota)
 
