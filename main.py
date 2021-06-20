@@ -2,6 +2,7 @@ import sys
 import math
 import random
 import string
+import keyboard
 import os
 import time
 import json
