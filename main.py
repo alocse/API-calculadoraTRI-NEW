@@ -74,7 +74,8 @@ def execute(nota_json):
     quant_itens=len(pnota_aluno[0])-1
 
     
-    
+    return json_nota
+    """
     for j in range(len(turm)):
         pnota_bin.append("")
         for i in range(len(pnota_aluno)):
@@ -111,8 +112,7 @@ def execute(nota_json):
         bmin.append(0)
 
     
-    return json_nota
-    """
+    
     if quant_itens>0:
         #primeira estimativa de nota
         for i in range(quant_itens):
