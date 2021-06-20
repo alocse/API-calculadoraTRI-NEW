@@ -52,13 +52,13 @@ def cci(a,b,k,c):
 def execute(nota_json):
     json_nota = json.dumps(nota_json)
     entrada = json.loads(json_nota)
-    
+    """
     anc1=entrada[0]['ANCORA_1']
     anc2=entrada[0]['ANCORA_2']
     disc=entrada[0]['DISCIPLINA']
     seri=entrada[0]['SERIE']
     turm=entrada[0]['TURMA']
-
+    
     alternativas=5
 
     for i in range(len(turm)):
@@ -303,3 +303,4 @@ def execute(nota_json):
     return_json1 = dic
     
     return return_json1
+    """
