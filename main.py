@@ -14,6 +14,7 @@ pnome_aluno=[]
 pnota_aluno=[]
 pnota_bin=[]
 nota=[]
+notamaxima=[]
 peso=[]
 flag=[]
 soma=[]
@@ -73,7 +74,7 @@ def execute(nota_json):
 
     for j in range(len(turm)):
         pnota_bin.append("")
-        for i in range(len(pnota_aluno)):
+        for i in range(len(pnota_aluno)-1):
             if pnota_aluno[j][i]==pnota_aluno[0][i]:
                 pnota_bin[j]=pnota_bin[j]+'1'
             else:
