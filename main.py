@@ -73,8 +73,7 @@ def execute(nota_json):
     quant_dados=len(turm)-1
     quant_itens=len(pnota_aluno[0])-1
 
-    return {"01", str(range(len(turm)))}
-
+    return turm
     """
     for j in range(len(turm)):
         pnota_bin.append("")
