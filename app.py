@@ -19,7 +19,7 @@ def calculate():
     try:  
         tri = execute(body) 
     except Exception as e: 
-        return e
+        raise InvalidUsage('This view is gone', status_code=410)
     
     return tri
 
