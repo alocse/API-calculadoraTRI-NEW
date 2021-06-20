@@ -17,10 +17,11 @@ def calculate():
     body = request.get_json()
     
     try:  
-         tri = execute(body) 
-        return tri
+        tri = execute(body) 
     except Exception as e: 
         return {"ok": "error"}
+    
+    return tri
     
 if __name__ == "__main__":
     app.run()
