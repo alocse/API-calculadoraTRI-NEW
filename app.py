@@ -15,12 +15,7 @@ def get():
 @app.route("/calculateTRI", methods=["POST"])
 def calculate():
     body = request.get_json()
-    
-    try:  
-        tri = execute(body) 
-    except Exception as e: 
-        raise InvalidUsage('This view is gone', status_code=410)
-    
+    tri = execute(body) 
     return tri
 
 if __name__ == "__main__":
