@@ -74,8 +74,7 @@ def execute(nota_json):
     quant_itens=len(pnota_aluno[0])-1
 
     
-    return json_nota
-    """
+    
     for j in range(len(turm)):
         pnota_bin.append("")
         for i in range(len(pnota_aluno)):
@@ -92,7 +91,8 @@ def execute(nota_json):
     dic['TURMA']={}
     for i in range(1,quant_dados):dic['TURMA'][nome[i]]=0
 
-
+    return json_nota
+    """
     # inicializacao de variaveis
     for i in range(quant_dados):
         nota.append(0)
