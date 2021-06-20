@@ -4,12 +4,7 @@ app = Flask(__name__)
 
 @app.route("/home")
 def home():
-    return "Flask API get endpoint running"
-
-
-@app.route("/teste", methods=["GET"])
-def get():
-    return {"ok": "mundo1"}
+    return "Bem vindo a calculadora TRI"
 
 
 @app.route("/calculateTRI", methods=["POST"])
