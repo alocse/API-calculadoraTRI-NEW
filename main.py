@@ -83,8 +83,8 @@ def execute(nota_json):
             else:
                 pnota_bin[j]=pnota_bin[j]+'0'
 
-    return json_nota
-    """
+    #return json_nota
+    #aqui quebrou
     nota_bin=pnota_bin[1:]
     nome=pnome_aluno[1:]
 
@@ -312,4 +312,4 @@ def execute(nota_json):
     return_json1 = dic
     
     return return_json1
-    """
+    
