@@ -1,4 +1,5 @@
 import flask
+import requests
 app = flask.Flask(__name__)
 
 @app.route("/home")
@@ -9,6 +10,7 @@ def home():
 @app.route("/teste", methods=["GET"])
 def get():
     return {"ok": "mundo1"}
+
 
 if __name__ == "__main__":
     app.run()
