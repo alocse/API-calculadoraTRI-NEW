@@ -2,5 +2,6 @@
 Flask==1.1.2
 Flask-Cors==3.0.10
 wheel==0.36.2
+readchar==2.0.1
 
 
