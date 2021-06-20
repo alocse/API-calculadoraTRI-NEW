@@ -63,8 +63,8 @@ def execute(nota_json):
     turm=entrada[0]['TURMA']
     
     alternativas=5
-    return json_nota
-    """
+    
+    
     for i in range(len(turm)):
         pnome_aluno.append(turm[i]['ALUNO'])
         pnota_aluno.append(turm[i]['RESPOSTA'])
@@ -73,6 +73,8 @@ def execute(nota_json):
     quant_dados=len(turm)-1
     quant_itens=len(pnota_aluno[0])-1
 
+    return json_nota
+    """
     for j in range(len(turm)):
         pnota_bin.append("")
         for i in range(len(pnota_aluno)):
