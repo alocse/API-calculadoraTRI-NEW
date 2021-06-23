@@ -86,7 +86,7 @@ def execute(nota_json):
     dic['DISCIPLINA']=disc
     dic['SERIE']=seri
     dic['TURMA']={}
-    for i in range(1,quant_dados):dic['TURMA'][nome[i]]=0
+    for i in range(quant_dados):dic['TURMA'][nome[i]]=0
 
 
     # inicializacao de variaveis
