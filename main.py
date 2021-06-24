@@ -175,7 +175,6 @@ def execute(nota_json):
                     soma[i*quant_itens+j]=1/alternativas
 
         #otimizacao de parametros
-        print('Pre-calibracao de itens...\n')
         cc=1/alternativas
         media=0
         desvpad=0
@@ -220,14 +219,12 @@ def execute(nota_json):
                 nota2=nota2+lutil*nota[i]
 
             habilidade[i]=nota2/nota1
-            print('Primeira estimativa da nota de ',nome[i])
-
+        
     else:
         for j in range(quant_dados):habilidade[j]=0
 
 
     #otimizacao dos parametros
-    print('\nCalibrando itens...\n')
     cc=1/alternativas
     media=0
     desvpad=0
@@ -272,13 +269,9 @@ def execute(nota_json):
             nota2=nota2+lutil*nota[i]
 
         habilidade[i]=nota2/nota1
-        print('Calculando nota de ',nome[i])
-
-
-
+    
 
     #normalizacao final e gravacao das notas
-    print('\nNormalizando as notas e finalizando os resultados...')
     desv_eq=100
     media_eq=500
     a=anc2/500
